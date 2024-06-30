@@ -1,0 +1,15 @@
+[package]
+name = "uring_playground"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+io-uring = "0.6.4"
+libc = "0.2.155"
+rustix = "0.38.34"
+
+[build-dependencies]
+bindgen = { version = "0.69", optional = true }
+
+[features]
+overwrite = ["bindgen"]
